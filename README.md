@@ -7,13 +7,16 @@ Auto positiong of submenus Wordpress twentytwentythree</br></br>
 <strong>Solving is : </strong></br>
 <p>Create or change file : <i>yourdomain.com/wp-content/themes/twentytwentythree/functions.php</i> AND Copy, paste this code in <i>functions.php</i> </p></br></br>
 <p style='background-color:#fff; padding:10px;'>
-<?php 
+?php 
 function addFooter(){
 ?>
+    
 <style>
 .rightControl {right:0px  !important; left:auto !important;}
 .lastNavLiElement {left: -100% !important;}
 </style>
+    
+    
 <script>
 function subMenuPositionControl() {
     var cS = 200; // body.width - 200
@@ -35,7 +38,8 @@ function subMenuPositionControl() {
             }
         }
     });
-    
+                                                                    
+                                                                    
     // Last nav li item submenu positon center <<<<<<<İF LAST ITEM!!>>>>>>
     
     var navLastLiItem = document.querySelectorAll(classSubMenusLi)[document.querySelectorAll(classSubMenusLi).length - 2];
@@ -52,7 +56,7 @@ subMenuPositionControl();</script>
 <?php
 }
 add_action( 'wp_footer', 'addFooter' );
-?>
+?
 </p>
 
 Screenshot is attached</br></br>
