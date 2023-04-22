@@ -6,7 +6,7 @@ Wordpress navigation submenu outside problem [solved]</br></br>
 Auto positiong of submenus Wordpress twentytwentythree</br></br>
 <strong>Solving is : </strong></br>
 <p>Create or change file : <i>yourdomain.com/wp-content/themes/twentytwentythree/functions.php</i> AND Copy, paste this code in <i>functions.php</i> </p></br></br>
-<code>
+<p style='background-color:#fff; padding:10px;'>
 <?php 
 function addFooter(){
 ?>
@@ -53,7 +53,7 @@ subMenuPositionControl();</script>
 }
 add_action( 'wp_footer', 'addFooter' );
 ?>
-</code>
+</p>
 
 Screenshot is attached</br></br>
 <img src='https://github.com/ayhanhzr/wordpressNav/blob/main/ss.png' />
